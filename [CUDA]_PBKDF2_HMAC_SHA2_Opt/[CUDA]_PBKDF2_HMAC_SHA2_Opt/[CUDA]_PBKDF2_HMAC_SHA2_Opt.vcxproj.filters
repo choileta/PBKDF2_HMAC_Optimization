@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="PBKDF2_HMAC_SHA160.cu">
+      <Filter>SHA160</Filter>
+    </CudaCompile>
+    <CudaCompile Include="PBKDF2_HMAC_SHA256.cu">
+      <Filter>SHA256</Filter>
+    </CudaCompile>
+    <CudaCompile Include="PBKDF2_HMAC_SHA512.cu">
+      <Filter>SHA512</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="SHA512">
+      <UniqueIdentifier>{dc9a3fcf-da29-42c4-b64e-7271ccf0b81e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SHA256">
+      <UniqueIdentifier>{6de1f50c-863e-423a-b085-845331ac1366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SHA160">
+      <UniqueIdentifier>{dce4268b-d8d0-4c2f-bd1c-1b3ac17bd98a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sha160.cuh">
+      <Filter>SHA160</Filter>
+    </ClInclude>
+    <ClInclude Include="sha256.cuh">
+      <Filter>SHA256</Filter>
+    </ClInclude>
+    <ClInclude Include="sha512.cuh">
+      <Filter>SHA512</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
